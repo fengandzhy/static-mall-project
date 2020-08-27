@@ -33,6 +33,8 @@ body {
     margin: 0 auto;
 }
 
+
+
 .clearfix {
     *zoom: 1;
 }
@@ -66,4 +68,64 @@ body {
     display: inline-block;
     margin-left: 10px;
 }
+
+/* 搜索框 */
+.searchWrap .w {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 33px;
+    left: 15px;
+    width: 150px;
+    height: 56px;
+    line-height: 56px;
+    font-size: 30px;
+    color: #e63e3e;
+    font-weight: bold;
+    text-align: center;
+}
+
+.search-box {
+    position: relative;
+    padding: 40px 0 40px 300px;
+}
+
+.search-box .searchInput {
+    float: left;
+    width: 530px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    font-size: 15px;
+}
+.search-box .search-btn {
+    float: left;
+    width: 50px;
+    height: 42px;
+    background-color: #e63e3e;
+    color: #fff;
+}
+
+.search-suggest {
+    display: none;
+    position: absolute;
+    top: 82px;
+    width: 550px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    z-index: 1000;
+}
+ul.search-suggest li {
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+
+
+
 
