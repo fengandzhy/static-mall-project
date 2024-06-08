@@ -8,3 +8,7 @@ button,
 input {
     font: 12px Arial;
 }
+
+li {
+    list-style: none; /* 关闭小圆点 */
+}
