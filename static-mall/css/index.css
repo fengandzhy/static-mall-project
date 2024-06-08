@@ -12,3 +12,18 @@ input {
 li {
     list-style: none; /* 关闭小圆点 */
 }
+
+a {
+    color: #666;
+    text-decoration: none; /* 移除超链接的下划线 */
+}
+
+input,
+button {
+    border: none;
+    outline: none; /* 移除按钮在获得焦点时的轮廓 */
+}
+
+body {
+    background-color: #f8fafc;
+}
