@@ -9,6 +9,10 @@ input {
     font: 12px Arial;
 }
 
+ul{
+    margin: 0;
+}
+
 li {
     list-style: none; /* 关闭小圆点 */
 }
@@ -28,9 +32,40 @@ body {
     background-color: #f8fafc;
 }
 
-.w{
-    width: 1190px;
+/* 基本样式 */
+.w {
+    width: 100%;    /* 在较小的设备上使用100%宽度 */
     margin: 0 auto; /* 上下边距为0，左右自动调整以实现居中 */
+}
+
+/* 媒体查询：针对平板设备 */
+@media (min-width: 768px) and (max-width: 991px) {
+    .w {
+        width: 750px; /* 平板设备上的宽度 */
+    }
+}
+
+/* 媒体查询：针对台式机 */
+@media (min-width: 992px) {
+    .w {
+        width: 1190px; /* 台式机上的宽度 */
+    }
+}
+
+/*这是一种针对旧版IE浏览器的特殊修复方法，用于触发IE的hasLayout机制，从而正确处理浮动内容。星号 (*) */
+/*是一个CSS hack，仅对IE浏览器生效。*/
+.clearfix{
+    *zoom: 1;
+}
+
+/*这段代码的关键在于 .clearfix::after 的定义，它使用了一个称为“清除浮动”的技术。*/
+/*通过添加一个块级伪元素并将其显示属性设置为 block，并且不占用任何高度，它能够“清除”前面所有浮动元素的效果。*/
+/*这样做的结果是父容器能够包围其内部的所有浮动子元素，防止因浮动而导致的父容器高度不足的问题。*/
+.clearfix::after{
+    content:"";
+    display: block;
+    height: 0;
+    clear: both;
 }
 
 /*顶部导航栏*/
