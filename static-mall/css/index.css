@@ -95,11 +95,33 @@ body {
 
 /*搜索框*/
 .logo{
-    width: 150px;
+    position: absolute;
+    width: 200px;
     height: 56px;
     line-height: 56px; /*当你设置 line-height: 56px; 时，你是在指定每行文字的高度应该是56像素。*/
     font-size: 40px;
     color: #e63e3e;
 }
 
+.search-box{
+    padding: 40px 0 40px 300px;
+}
+
+.search-box .search-input{
+    float:left;
+    width: 530px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+.search-box .search-btn{
+    float:left;
+    width: 50px;
+    height: 40px;
+    background-color: #e63e3e;
+    color: #fff;
+}
 
