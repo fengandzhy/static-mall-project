@@ -94,16 +94,24 @@ body {
 }
 
 /*搜索框*/
+.search-wrap .w{
+    position: relative;
+}
 .logo{
     position: absolute;
+    top: 33px;
+    left: 15px;
     width: 200px;
     height: 56px;
     line-height: 56px; /*当你设置 line-height: 56px; 时，你是在指定每行文字的高度应该是56像素。*/
     font-size: 40px;
     color: #e63e3e;
+    font-width: bold;
+    text-align: center;
 }
 
 .search-box{
+    position: relative;
     padding: 40px 0 40px 300px;
 }
 
@@ -124,4 +132,14 @@ body {
     background-color: #e63e3e;
     color: #fff;
 }
+
+.search-box .search-suggestion{
+    position: absolute;
+    top: 80px;
+    background-color: white;
+    width:530px;
+    border: 1px solid #ddd;
+}
+
+
 
