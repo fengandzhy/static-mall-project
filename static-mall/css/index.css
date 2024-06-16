@@ -134,6 +134,7 @@ body {
 }
 
 .search-box .search-suggestion{
+    display: none;
     position: absolute;
     top: 80px;
     background-color: white;
@@ -141,5 +142,11 @@ body {
     border: 1px solid #ddd;
 }
 
+.search-suggestion ul li {
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    padding: 0 10px;
+}
 
 
