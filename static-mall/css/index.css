@@ -149,4 +149,100 @@ body {
     padding: 0 10px;
 }
 
+/*商品分类*/
+.menu{
+    padding-bottom: 30px;
+}
 
+.aside-nav{
+    float: left;
+    width: 200px;
+    height: 500px;
+    box-shadow: 2px 6px 9px rgb(0,0,0,.2);
+}
+
+.list-item .item-href{
+    display: block;
+    margin: 0 20px;
+    height: 50px;
+    line-height: 50px;
+    color: #333;
+    border-bottom: 1px dotted #ddd;
+    box-sizing: border-box;
+}
+
+.list-item:last-child .item-href{
+    border:none;
+}
+
+.nav-list{
+    position: relative;
+}
+
+.list-item:hover,
+.list-item:hover .item-href {
+    background: #e63025;
+    color:#fff;
+}
+
+/*二级分类*/
+.nav-list .item-menu{
+    display: none;
+    position: absolute;
+    left:200px;
+    top:0;
+    width: 900px;
+    min-height: 500px; /*表示设置一个元素的最小高度为500像素。这意味着无论内容多少，元素的高度至少会有500像素*/
+    background-color: #fff;
+    box-shadow: 2px 2px 9px rgb(0,0,0,.2);
+    z-index: 999; /*z-index 只对定位元素（position属性为relative, absolute, fixed或sticky）有效。*/
+}
+
+.list-item:hover .item-menu{
+    display: block;
+}
+
+.subcategory{
+    float:left;
+    width: 610px;
+    padding: 30px 20px 20px 20px;
+}
+
+.subcategory .subcategory-item{
+    position: relative;
+    padding-left:80px;
+}
+
+.subcategory .subcategory-item .subcategory-title{
+    position: absolute;
+    left:0;
+    top:6px;
+    width: 70px;
+    text-align: right;
+    white-space: nowrap; /*设置为 nowrap 时，这个属性指示浏览器阻止文本自动换行到下一行，即使在其容器的边界也是如此。*/
+    text-overflow: ellipsis; /*当文本长度超出其父元素的宽度时，这个属性指定使用省略号（...）来表示被截断的文本部分。*/
+    overflow: hidden; /*这告诉浏览器隐藏超出元素边界的内容。*/
+    font-wight: 700;
+}
+
+.subcategory-title .subcategory-title-arrow{
+    margin-left: 5px;
+}
+
+.subcategory .subcategory-content{
+    padding:5px 0;
+}
+
+.subcategory .subcategory-content .subcategory-content-link{
+    float: left;
+    height: 16px;
+    line-height: 16px;
+    border-left: 1px solid #ddd;
+    padding: 0 10px;
+    margin: 3px 0;
+}
+
+.subcategory .subcategory-link:hover,
+.subcategory .subcategory-content .subcategory-content-link:hover{
+    color:#e63025;
+}
