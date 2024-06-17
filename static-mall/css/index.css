@@ -175,5 +175,21 @@ body {
     border:none;
 }
 
+.nav-list{
+    position: relative;
+}
+
+.nav-list .item-menu{
+    position: absolute;
+    left:200px;
+    top:0;
+    width: 900px;
+    min-height: 500px; /*表示设置一个元素的最小高度为500像素。这意味着无论内容多少，元素的高度至少会有500像素*/
+    background-color: #fff;
+    box-shadow: 2px 2px 9px rgb(0,0,0,.2);
+    z-index: 999; /*z-index 只对定位元素（position属性为relative, absolute, fixed或sticky）有效。*/
+}
+
+
 
 
